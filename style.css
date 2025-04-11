@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto;
+}
+:root {
+  /*Fonte-size para usar rem = +responsivo*/
+  font-size: 62.5%;
+  /*background colors*/
+  --bg-light: #f9f4fb;
+  --bg-blue: linear-gradient(#343193 0%, #302c63 100%);
+  --bg-cards: #ffffff;
+
+  /*fonts*/
+  --primary-color: #b52184;
+  --second-color: #312d64;
+  --tertiary-color: #ffffff;
+  /*cor padrão*/
+  background-color: var(--bg-light);
+  color: var(--second-color);
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+}
+
+/*mobile first*/
+#container {
+  max-width: 430px;
+  margin: 0 auto;
+}
+
+#initial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main {
+  background-image: var(--bg-blue);
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.cards {
+  margin: 0 auto;
+  max-width: 350px;
+  border-radius: 19px;
+  padding: 2.6rem;
+  background-color: var(--bg-cards);
+}
+.cards img {
+  margin-bottom: 33px;
+}
+#contact {
+}
+footer {
+  background-image: var(--bg-blue);
+  color: var(--tertiary-color);
+}
+
+h1,
+h2,
+h3,
+i {
+  color: var(--primary-color);
+  font-weight: 900;
+}
+
+h1,
+h3 {
+  font-size: 3.2rem;
+}
+h2 {
+  font-size: 3rem;
+}
+p {
+  font-size: 1.6rem;
+}
